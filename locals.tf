@@ -1,12 +1,13 @@
 locals {
   project = {
     "fem-eci-project" = {
-      description = "description in locals of project"
+      description = "Example description of project"
     }
   }
+
   workspace = {
-    "fem-eci-workspace" = {
-      description    = "description in locals of workspace"
+    "fem-eci-tfe" = {
+      description    = "Example automation workspace for Terraform Cloud resources."
       execution_mode = "local"
       project_id     = module.project["fem-eci-project"].id
     }
